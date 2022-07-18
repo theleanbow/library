@@ -1,12 +1,21 @@
 :root {
   font-family: "Poppins", sans-serif;
 }
-.card {
-  /* display: inline; */
-  height: 100px;
-  width: 100px;
+.div {
+  gap: 10px;
   display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.card {
+  font-weight: 400;
+  font-size: 1.2rem;
+  background-color: antiquewhite;
 }
 .hidden {
   display: none;
+}
+form {
+  z-index: 10;
+  margin: auto;
 }
