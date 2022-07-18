@@ -1,0 +1,11 @@
+:root {
+  font-family: "Poppins", sans-serif;
+}
+.card {
+  /* display: inline; */
+  height: 100px;
+  width: 100px;
+}
+.hidden {
+  display: none;
+}

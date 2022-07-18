@@ -6,11 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
-    <script src="script.js" defer></script>i
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <h1>Library</h1>
+    <form action="#" class="hidden">
+        <fieldset>
+            <legend>Enter Book Details</legend>
+            <div>
+                <label for="title">Enter the book's name</label>
+                <input type="text" name="title" id="title" required>
+            </div>
+            <div>
+                <label for="author">Enter the book's author's name</label>
+                <input type="text" name="author" id="author" required>
+            </div>
+            <div>
+                <label for="pages">Enter the book's total pages</label>
+                <input type="number" name="pages" id="pages">
+            </div>
+            <div>
+                <label for="hasRead">Have you read the book?</label>
+                <select name="hasRead" id="hasRead">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <button type="reset">Reset</button>
+            <button>Submit</button>
+        </fieldset>
 
+
+    </form>
+    <button id="addBook">+Add Book</button>
 </body>
 
 </html>
