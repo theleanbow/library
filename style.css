@@ -5,6 +5,7 @@
   /* display: inline; */
   height: 100px;
   width: 100px;
+  display: grid;
 }
 .hidden {
   display: none;

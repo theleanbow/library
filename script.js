@@ -13,9 +13,11 @@ function submit() {
     );
     myLibrary.push(bookDetails);
     form.reset();
+    display();
+    form.classList.add("hidden");
+    addBook.classList.remove("hidden");
   });
 }
-// });
 function Book(title, author, pages) {
   this.title = title;
   this.author = author;
@@ -25,9 +27,22 @@ addBook.addEventListener("click", () => {
   form.classList.remove("hidden");
   addBook.classList.add("hidden");
 });
-
-// div = document.createElement("div");
-//   div.innerText = "hello";
-//   div.classList.add("card");
-//   library.appendChild(div);
+function display() {
+  for (let i = myLibrary.length - 1; i < myLibrary.length; i++) {
+    div = document.createElement("div");
+    divCards = document.createElement("div");
+    titleCard = document.createElement("div");
+    titleCard.innerText = myLibrary[i].title;
+    authorCard = document.createElement("div");
+    authorCard.innerText = myLibrary[i].author;
+    pagesCard = document.createElement("div");
+    pagesCard.innerText = myLibrary[i].pages;
+    divCards.classList.add("card");
+    library.appendChild(div);
+    div.appendChild(divCards);
+    divCards.appendChild(titleCard);
+    divCards.appendChild(authorCard);
+    divCards.appendChild(pagesCard);
+  }
+}
 submit();
