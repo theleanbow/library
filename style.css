@@ -1,6 +1,7 @@
 :root {
   font-family: "Poppins", sans-serif;
 }
+/* .container, */
 .div {
   gap: 10px;
   display: grid;
@@ -18,4 +19,13 @@
 form {
   z-index: 10;
   margin: auto;
+  height: 100vh;
+}
+.popup {
+  z-index: 10;
+  display: flex;
+}
+
+.addBook {
+  width: 200px;
 }

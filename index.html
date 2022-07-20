@@ -15,36 +15,40 @@
 
 <body>
     <h1>Library</h1>
-    <form action="#" class="hidden">
-        <fieldset>
-            <legend>Enter Book Details</legend>
-            <div>
-                <label for="title">Enter the book's name</label>
-                <input type="text" name="title" id="title" required>
-            </div>
-            <div>
-                <label for="author">Enter the book's author's name</label>
-                <input type="text" name="author" id="author" required>
-            </div>
-            <div>
-                <label for="pages">Enter the book's total pages</label>
-                <input type="number" name="pages" id="pages">
-            </div>
-            <div>
-                <label for="hasRead">Have you read the book?</label>
-                <select name="hasRead" id="hasRead">
-                    <option value="yes">Yes</option>
-                    <option value="no">No</option>
-                </select>
-            </div>
-            <button type="reset">Reset</button>
-            <button type="button" class="bookSubmit">Submit</button>
-        </fieldset>
+    <div class="popup">
 
+        <form action="#" class="hidden">
+            <fieldset>
+                <legend>Enter Book Details</legend>
+                <div>
+                    <label for="title">Enter the book's name</label>
+                    <input type="text" name="title" id="title" required>
+                </div>
+                <div>
+                    <label for="author">Enter the book's author's name</label>
+                    <input type="text" name="author" id="author" required>
+                </div>
+                <div>
+                    <label for="pages">Enter the book's total pages</label>
+                    <input type="number" name="pages" id="pages" required>
+                </div>
+                <div>
+                    <label for="hasRead">Have you read the book?</label>
+                    <select name="hasRead" id="hasRead">
+                        <option value="Read">Yes</option>
+                        <option value="Not Read">No</option>
+                    </select>
+                </div>
+                <button type="reset">Reset</button>
+                <button type="button" class="bookSubmit">Submit</button>
+            </fieldset>
+        </form>
+    </div>
+    <div class="container">
 
-    </form>
-    <div class="div"></div>
-    <button id="addBook">+Add Book</button>
+        <button id="addBook">+Add Book</button>
+        <div class="div"></div>
+    </div>
 </body>
 
 </html>
